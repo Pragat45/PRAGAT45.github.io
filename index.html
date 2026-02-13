@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Pragat Pagariya | Data Analyst Portfolio</title>
+  <meta name="description" content="Pragat Pagariya — Data Analyst (Dublin). Python, SQL, Power BI, Cloud. Projects in time series, computer vision, NLP, RAG." />
+  <meta name="theme-color" content="#0b1220" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Top bar -->
+  <header class="header">
+    <div class="container nav-wrap">
+      <a class="logo" href="#home">Pragat<span>Pagariya</span></a>
+
+      <nav class="nav" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#impact">Impact</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="icon-btn" id="themeToggle" aria-label="Toggle dark mode">🌙</button>
+        <button class="icon-btn hamburger" id="menuBtn" aria-label="Open menu">☰</button>
+        <a class="btn btn-primary" href="resume.pdf" target="_blank" rel="noopener">Resume</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <div class="mobile-menu-inner">
+      <div class="mobile-top">
+        <span class="mobile-title">Menu</span>
+        <button class="icon-btn" id="closeMenu" aria-label="Close menu">✕</button>
+      </div>
+      <a href="#about" class="mobile-link">About</a>
+      <a href="#skills" class="mobile-link">Skills</a>
+      <a href="#impact" class="mobile-link">Impact</a>
+      <a href="#projects" class="mobile-link">Projects</a>
+      <a href="#experience" class="mobile-link">Experience</a>
+      <a href="#education" class="mobile-link">Education</a>
+      <a href="#contact" class="mobile-link">Contact</a>
+      <a class="btn btn-primary" href="resume.pdf" target="_blank" rel="noopener">Download Resume</a>
+    </div>
+  </div>
+
+  <!-- Hero -->
+  <main id="home" class="hero">
+    <div class="container hero-grid">
+      <div class="hero-left">
+        <p class="pill">Data Analyst • Dublin, Ireland • Open to opportunities</p>
+
+        <h1>
+          Hi, I’m <span class="accent">Pragat</span> —<br/>
+          <span class="muted">I turn data into</span> <span class="accent2">business decisions</span>.
+        </h1>
+
+        <p class="hero-sub">
+          Analytical and results-driven <strong>Data Analyst</strong> with <strong>3+ years</strong> experience delivering insights,
+          automation, and BI reporting. Strong in <strong>Python, SQL, Power BI</strong>, time series, and cloud (GCP/Azure),
+          with awareness of <strong>GDPR-aligned</strong> governance.
+        </p>
+
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="#projects">View Projects</a>
+          <a class="btn btn-ghost" href="#contact">Contact</a>
+          <a class="btn btn-ghost" href="resume.pdf" target="_blank" rel="noopener">Download Resume</a>
+        </div>
+
+        <div class="socials" aria-label="Social links">
+          <a href="mailto:pragat.pagariya@gmail.com">Email</a>
+          <a href="https://www.linkedin.com/in/pragat-pagariya" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://github.com/Pragat45" target="_blank" rel="noopener">GitHub</a>
+        </div>
+
+        <div class="quick-stats" aria-label="Highlights">
+          <div class="stat">
+            <div class="stat-num">3+ yrs</div>
+            <div class="stat-label">Analytics</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">40%</div>
+            <div class="stat-label">Reporting effort ↓</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">60%</div>
+            <div class="stat-label">Deploy time ↓</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">35%</div>
+            <div class="stat-label">Hallucinations ↓</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="card profile-card">
+          <div class="avatar" aria-hidden="true">PP</div>
+          <h3>Pragat Pagariya</h3>
+          <p class="muted">Data Analyst • Python • SQL • Power BI</p>
+
+          <div class="profile-tags">
+            <span class="tag">KPI Reporting</span>
+            <span class="tag">Automation</span>
+            <span class="tag">Cloud (GCP/Azure)</span>
+            <span class="tag">Time Series</span>
+          </div>
+
+          <div class="profile-actions">
+            <a class="btn btn-primary" href="#contact">Hire / Interview</a>
+            <a class="btn btn-ghost" href="#impact">Proof of Impact</a>
+          </div>
+
+          <div class="note muted">
+            Recruiter tip: This page is optimized for quick scanning + measurable outcomes.
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- About -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-head">
+        <h2>About</h2>
+        <p class="muted">What I do, how I work, and what roles I’m targeting.</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="card">
+          <h3>Summary</h3>
+          <p>
+            I specialize in turning messy datasets into clear insights using <strong>Python, SQL</strong>, and dashboards in
+            <strong>Power BI</strong>. I’ve automated reporting, improved model quality, and built pipelines that help teams move faster.
+          </p>
+          <p>
+            I’m currently targeting roles like <strong>Data Analyst</strong>, <strong>BI Analyst</strong>, or <strong>Analytics Engineer</strong>
+            (entry to mid-level) in Dublin or remote.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>What you’ll get working with me</h3>
+          <ul class="bullets">
+            <li><strong>Fast, reliable reporting:</strong> clean KPIs and automated refresh pipelines.</li>
+            <li><strong>Decision-ready insights:</strong> analysis that answers business questions clearly.</li>
+            <li><strong>Quality mindset:</strong> testing/debugging habits and documentation.</li>
+            <li><strong>Hands-on delivery:</strong> prototypes to production using cloud + tooling.</li>
+          </ul>
+          <div class="mini-cta">
+            <a class="btn btn-primary" href="mailto:pragat.pagariya@gmail.com">Email Me</a>
+            <a class="btn btn-ghost" href="resume.pdf" target="_blank" rel="noopener">Resume</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="section alt">
+    <div class="container">
+      <div class="section-head">
+        <h2>Skills</h2>
+        <p class="muted">Tools I use to analyze, visualize, and deploy data solutions.</p>
+      </div>
+
+      <div class="skills-grid">
+        <div class="card">
+          <h3>Analytics & BI</h3>
+          <div class="chips">
+            <span class="chip">Python (Pandas, NumPy)</span>
+            <span class="chip">SQL</span>
+            <span class="chip">Power BI</span>
+            <span class="chip">Tableau</span>
+            <span class="chip">KPI Reporting</span>
+            <span class="chip">Time Series</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>ML / Data Science</h3>
+          <div class="chips">
+            <span class="chip">PySpark</span>
+            <span class="chip">Feature Engineering</span>
+            <span class="chip">ARIMA / Prophet</span>
+            <span class="chip">LSTM</span>
+            <span class="chip">Computer Vision</span>
+            <span class="chip">NLP</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Cloud & Delivery</h3>
+          <div class="chips">
+            <span class="chip">GCP</span>
+            <span class="chip">Azure (familiar)</span>
+            <span class="chip">Docker</span>
+            <span class="chip">Spark</span>
+            <span class="chip">Git/GitHub</span>
+            <span class="chip">CI/CD (Jenkins, GitHub Actions)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Impact -->
+  <section id="impact" class="section">
+    <div class="container">
+      <div class="section-head">
+        <h2>Proof of Impact</h2>
+        <p class="muted">Numbers recruiters care about (pulled from my experience).</p>
+      </div>
+
+      <div class="impact-grid">
+        <div class="card impact-item">
+          <h3>50% faster task completion</h3>
+          <p class="muted">Prototyped and deployed a multi-agent LLM system coordinating task delegation.</p>
+        </div>
+        <div class="card impact-item">
+          <h3>35% fewer hallucinations</h3>
+          <p class="muted">Built RAG pipelines (FAISS, LangChain, OpenAI APIs) improving response quality.</p>
+        </div>
+        <div class="card impact-item">
+          <h3>60% faster deployments</h3>
+          <p class="muted">Built CI/CD pipelines (Jenkins, GitHub Actions), boosting release frequency.</p>
+        </div>
+        <div class="card impact-item">
+          <h3>40% less manual reporting</h3>
+          <p class="muted">Produced weekly/monthly reporting workflows enabling faster decisions.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="section alt">
+    <div class="container">
+      <div class="section-head">
+        <h2>Projects</h2>
+        <p class="muted">Strong projects with measurable outcomes. Add GitHub + Live demo links.</p>
+      </div>
+
+      <div class="projects-grid">
+        <article class="card project">
+          <div class="project-top">
+            <h3>Time Series Stock Forecasting</h3>
+            <span class="badge">92% Accuracy</span>
+          </div>
+          <p class="muted">
+            Built ARIMA, Prophet, and LSTM forecasting models; improved MAPE by 15% via optimization and decomposition.
+            Enhanced portfolio return projections by 18%.
+          </p>
+          <div class="chips">
+            <span class="chip">Python</span>
+            <span class="chip">ARIMA</span>
+            <span class="chip">Prophet</span>
+            <span class="chip">LSTM</span>
+          </div>
+          <div class="project-links">
+            <a class="btn btn-ghost" href="https://github.com/Pragat45" target="_blank" rel="noopener">GitHub</a>
+            <a class="btn btn-primary" href="#" target="_blank" rel="noopener">Live Demo</a>
+          </div>
+        </article>
+
+        <article class="card project">
+          <div class="project-top">
+            <h3>Deep Learning Image Classification</h3>
+            <span class="badge">+9% Accuracy</span>
+          </div>
+          <p class="muted">
+            Improved model accuracy using augmentation, tuning, and feature engineering. Tuned with GridSearchCV + SciKeras
+            (learning rate, batch size, optimizer, activation, architecture).
+          </p>
+          <div class="chips">
+            <span class="chip">TensorFlow/Keras</span>
+            <span class="chip">GridSearchCV</span>
+            <span class="chip">Computer Vision</span>
+          </div>
+          <div class="project-links">
+            <a class="btn btn-ghost" href="https://github.com/Pragat45" target="_blank" rel="noopener">GitHub</a>
+            <a class="btn btn-primary" href="#" target="_blank" rel="noopener">Live Demo</a>
+          </div>
+        </article>
+
+        <article class="card project">
+          <div class="project-top">
+            <h3>NLP Candidate Ranking (Potential Talents)</h3>
+            <span class="badge">4× Faster</span>
+          </div>
+          <p class="muted">
+            Built an NLP model with TF-IDF/Word2Vec/BoW improving fit score by 12% and scalability by 25%.
+            Added real-time re-ranking, boosting selection accuracy by 75% and cutting recruiter evaluation time by 4×.
+          </p>
+          <div class="chips">
+            <span class="chip">NLP</span>
+            <span class="chip">TensorFlow</span>
+            <span class="chip">TF-IDF</span>
+            <span class="chip">Word2Vec</span>
+          </div>
+          <div class="project-links">
+            <a class="btn btn-ghost" href="https://github.com/Pragat45" target="_blank" rel="noopener">GitHub</a>
+            <a class="btn btn-primary" href="#" target="_blank" rel="noopener">Live Demo</a>
+          </div>
+        </article>
+
+        <article class="card project">
+          <div class="project-top">
+            <h3>LiDAR + YOLO Object Detection Fusion</h3>
+            <span class="badge">98% Accuracy</span>
+          </div>
+          <p class="muted">
+            Built a fusion model integrating YOLOv8 and YOLOv10 with LiDAR for autonomous driving.
+            Evaluated with precision, recall, F1, IoU, and mAP.
+          </p>
+          <div class="chips">
+            <span class="chip">YOLOv8</span>
+            <span class="chip">YOLOv10</span>
+            <span class="chip">LiDAR</span>
+            <span class="chip">mAP / IoU</span>
+          </div>
+          <div class="project-links">
+            <a class="btn btn-ghost" href="https://github.com/Pragat45" target="_blank" rel="noopener">GitHub</a>
+            <a class="btn btn-primary" href="#" target="_blank" rel="noopener">Live Demo</a>
+          </div>
+        </article>
+      </div>
+
+      <div class="center">
+        <a class="btn btn-ghost" href="https://github.com/Pragat45" target="_blank" rel="noopener">More on GitHub →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience" class="section">
+    <div class="container">
+      <div class="section-head">
+        <h2>Experience</h2>
+        <p class="muted">Roles that show analytics, delivery, and impact.</p>
+      </div>
+
+      <div class="timeline">
+        <div class="card timeline-item">
+          <div class="timeline-top">
+            <h3>Artificial Intelligence Resident — Apziva (Remote)</h3>
+            <span class="muted">Nov 2024 – Nov 2025</span>
+          </div>
+          <ul class="bullets">
+            <li>Deployed multi-agent LLM system reducing average task completion time by <strong>50%</strong>.</li>
+            <li>Built RAG pipelines (FAISS, LangChain, OpenAI APIs) reducing hallucinations by <strong>35%</strong>.</li>
+          </ul>
+        </div>
+
+        <div class="card timeline-item">
+          <div class="timeline-top">
+            <h3>Technical Consultant — WebShark Web Services (Remote)</h3>
+            <span class="muted">Oct 2023 – Jun 2024</span>
+          </div>
+          <ul class="bullets">
+            <li>Built CI/CD pipelines (Jenkins, GitHub Actions) cutting deployment time by <strong>60%</strong>.</li>
+            <li>Deployed ML models on <strong>GCP</strong> using <strong>Docker</strong> & Kubernetes (container orchestration).</li>
+          </ul>
+        </div>
+
+        <div class="card timeline-item">
+          <div class="timeline-top">
+            <h3>Data Analyst — Tata Consultancy Services (Mumbai)</h3>
+            <span class="muted">May 2022 – Jul 2023</span>
+          </div>
+          <ul class="bullets">
+            <li>Delivered weekly/monthly reports, reducing manual reporting effort by <strong>40%</strong>.</li>
+            <li>Applied testing/debugging during ML optimization, reducing bugs by <strong>30%</strong>.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section id="education" class="section alt">
+    <div class="container">
+      <div class="section-head">
+        <h2>Education</h2>
+        <p class="muted">Strong academic foundation in AI + computer science.</p>
+      </div>
+
+      <div class="edu-grid">
+        <div class="card">
+          <h3>MSc in Artificial Intelligence (2:1 honours)</h3>
+          <p class="muted">National College of Ireland • Sept 2023 – Oct 2024</p>
+          <div class="chips">
+            <span class="chip">AI Decision-Making</span>
+            <span class="chip">Data Analytics in AI</span>
+            <span class="chip">AI Systems Evaluation</span>
+            <span class="chip">Data Governance & Ethics</span>
+            <span class="chip">Intelligent Agents</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>BSc in Computer Science (GPA: 8.18/10)</h3>
+          <p class="muted">Vellore Institute of Technology • Jul 2019 – May 2022</p>
+          <div class="chips">
+            <span class="chip">DSA</span>
+            <span class="chip">DBMS</span>
+            <span class="chip">Data Mining</span>
+            <span class="chip">Software Testing</span>
+            <span class="chip">Computer Architecture</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="certs card">
+        <h3>Certifications</h3>
+        <div class="chips">
+          <span class="chip">Machine Learning — Coursera</span>
+          <span class="chip">Google Cloud Fundamentals — Coursera</span>
+          <span class="chip">C++ Application — Coursera</span>
+          <span class="chip">Leading Strategy Innovation — FutureLearn</span>
+          <span class="chip">Data Analytics for Decision Making — FutureLearn</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="section-head">
+        <h2>Contact</h2>
+        <p class="muted">Best way to reach me: email or LinkedIn.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="card">
+          <h3>Let’s talk</h3>
+          <p class="muted">I’m actively applying and available for interviews.</p>
+
+          <div class="contact-items">
+            <a class="contact-item" href="mailto:pragat.pagariya@gmail.com">📧 pragat.pagariya@gmail.com</a>
+            <a class="contact-item" href="tel:+353892127058">📞 +353 892127058</a>
+            <a class="contact-item" href="https://www.linkedin.com/in/pragat-pagariya" target="_blank" rel="noopener">💼 LinkedIn</a>
+            <a class="contact-item" href="https://github.com/Pragat45" target="_blank" rel="noopener">🐙 GitHub</a>
+          </div>
+
+          <div class="mini-cta">
+            <a class="btn btn-primary" href="mailto:pragat.pagariya@gmail.com?subject=Interview%20Opportunity%20-%20Data%20Analyst">Email for Interview</a>
+            <a class="btn btn-ghost" href="resume.pdf" target="_blank" rel="noopener">Resume</a>
+          </div>
+        </div>
+
+        <form class="card form" onsubmit="return false;">
+          <h3>Quick message</h3>
+          <p class="muted">This opens the sender’s email app with a pre-filled message.</p>
+
+          <label>
+            Name
+            <input id="msgName" type="text" placeholder="Your name" />
+          </label>
+
+          <label>
+            Email
+            <input id="msgEmail" type="email" placeholder="you@company.com" />
+          </label>
+
+          <label>
+            Message
+            <textarea id="msgText" rows="5" placeholder="Hi Pragat, we'd like to discuss a Data Analyst role..."></textarea>
+          </label>
+
+          <button class="btn btn-primary" id="sendBtn" type="button">Send</button>
+          <p class="muted small">Tip: later you can connect this to Formspree (no backend needed).</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p class="muted">© <span id="year"></span> Pragat Pagariya</p>
+      <a class="muted" href="#home">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
